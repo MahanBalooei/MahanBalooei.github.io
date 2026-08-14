@@ -4,14 +4,24 @@ title: "Curriculum Vitae"
 
 <p><a href="files/CV_Mahan_Balooei.pdf">Download PDF version</a></p>
 
+## Profile
+
+MSc Bioinformatics student at the University of Bologna with a background in Medical Laboratory Sciences and a focus on computational protein biology, protein language models, and machine-learning-based protein sequence analysis. Experienced with ESM-2 representations, sequence-function prediction, HMMER/MMseqs2 workflows, and reproducible machine-learning pipelines. Interested in developing learning-based methods for protein sequence, structure, function, and molecular interactions.
+
+## Research Interests
+
+- Protein language models and representation learning
+- Protein sequence-structure-function modelling
+- Protein-protein and protein-peptide interaction modelling
+- Generative and structure-aware protein design
+- Remote homology detection and functional annotation
+
 ## Education
 
 **University of Bologna** — MSc in Bioinformatics
 *Oct 2024 – Present*
 
 Coursework: sequence alignment, RNA-seq, microarrays, statistical analysis in R; machine learning and deep learning with scikit-learn and TensorFlow; SQL/graph queries, Docker, HPC/Slurm.
-
-Research focus: protein language models, protein sequence representation learning, protein functional annotation, sequence-function prediction, and remote homology detection.
 
 **Iran University of Medical Sciences** — BSc in Medical Laboratory Sciences
 *Sept 2019 – Jul 2023*
@@ -21,7 +31,9 @@ Relevant coursework: Molecular Diagnostics, Immunoassays, Clinical Chemistry, Ha
 ## Publications
 
 <div class="publication">
-Farmani, S., Dehghanbanadaki, N., **Balooei, M.**, Mehralitabar, H., Sabaghian, H., & Naderi-Manesh, H. (2025). Mechanism-based targeting of lactate dehydrogenase tetramerization by naturally derived compounds: A survey of molecular docking, molecular dynamics, and QSAR analysis. *Computers in Biology and Medicine*, 197, 111000. [https://doi.org/10.1016/j.compbiomed.2025.111000](https://doi.org/10.1016/j.compbiomed.2025.111000)
+Farmani, S., Dehghanbanadaki, N., **Balooei, M.** (equal-contributing author), Mehralitabar, H., Sabaghian, H., & Naderi-Manesh, H. (2025). Mechanism-based targeting of lactate dehydrogenase tetramerization process through natural derived compounds: A survey of molecular docking, molecular dynamics, and QSAR analysis. *Computers in Biology and Medicine*, 197, 111000. [https://doi.org/10.1016/j.compbiomed.2025.111000](https://doi.org/10.1016/j.compbiomed.2025.111000)
+
+Screened approximately 5,000 naturally derived compounds against four LDH tetramerization interfaces, evaluating top candidates using molecular docking, 100-ns molecular dynamics simulations, MM-PBSA, PCA/DCCM, pharmacophore, ADMET, and QSAR analyses. Identified candidate inhibitors with distinct effects on LDH conformational dynamics, highlighting two compounds as promising modulators of the A2 and B2 tetramerization interfaces respectively.
 </div>
 
 ## Research Experience
@@ -43,13 +55,13 @@ Conducted an R/Bioconductor workflow for Illumina 450K DNA methylation array ana
 
 Compared ResNet50, EfficientNetB0, and DenseNet-121 XRV for pneumonia classification. Addressed class imbalance and evaluated threshold-selection strategies using clinically relevant metrics, applying ensembling, test-time augmentation, and Grad-CAM-based interpretability. DenseNet-121 XRV achieved the strongest performance under the maximum-MCC threshold strategy. [Code](https://github.com/MahanBalooei/chest-xray-pneumonia-detection)
 
-## Technical Skills
-
-**Functional Genomics & Epigenomics:** DNA methylation analysis (Illumina 450K arrays, minfi), differential methylation region (DMR) detection, PCA-based batch-effect assessment, R/Bioconductor
+## Skills
 
 **Protein Bioinformatics & Sequence Analysis:** ESM-2 protein language model embeddings, protein representation learning, signal peptide prediction, sequence-function prediction, protein-domain annotation, HMMER, MMseqs2, BLAST, Clustal, UniProt, PDB
 
 **Machine Learning & Deep Learning:** PyTorch, scikit-learn, TensorFlow, SVMs, CNN-BiLSTM, transfer learning, representation learning, model evaluation, threshold optimization, class-imbalance handling, ensembling, Grad-CAM-based interpretability
+
+**Functional Genomics & Epigenomics:** DNA methylation analysis (Illumina 450K arrays, minfi), differential methylation region (DMR) detection, PCA-based batch-effect assessment, R/Bioconductor
 
 **Reproducible Workflows & Tools:** Python, R, Bash/Linux, SQL, Git/GitHub, Docker, HPC/Slurm, R Markdown, Jupyter Notebooks, conda environments
 

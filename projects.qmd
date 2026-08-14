@@ -1,0 +1,93 @@
+---
+title: "Projects"
+---
+
+## Protein Bioinformatics & Machine Learning
+
+### Protein Language Model-Based Signal Peptide Prediction
+
+Comparing Classical Methods, SVMs, CNN-BiLSTM, and ESM-2 Embeddings
+
+**Objective:** To build an end-to-end protein sequence modelling pipeline for eukaryotic signal-peptide prediction, benchmarking classical and deep learning approaches against modern protein language model embeddings.
+
+**Approach:**
+
+1. **Data Preparation**
+   - Used high-confidence UniProtKB/Swiss-Prot annotations.
+   - Applied **MMseqs2** clustering for redundancy reduction and biologically meaningful train/benchmark splits.
+2. **Model Comparison**
+   - Benchmarked the classical **von Heijne PSWM**, a biochemical-feature **SVM**, a **CNN-BiLSTM**, and an **ESM-2** embedding-based model.
+3. **Evaluation & Interpretation**
+   - Achieved **F1 = 0.962** and **MCC = 0.957** on a held-out benchmark using the ESM-2-based model.
+   - Analyzed amino-acid composition, signal-peptide lengths, kingdom-specific bias, and cleavage-site motifs.
+
+**Tech Stack:** `Python`, `PyTorch`, `ESM-2`, `MMseqs2`, `scikit-learn`
+
+> **Key Insight:** Protein language model embeddings substantially outperformed classical statistical and hand-engineered feature approaches, underscoring the value of learned representations for functional prediction tasks.
+
+[GitHub Repository](https://github.com/MahanBalooei/eukaryotic-signal-peptide-prediction)
+
+---
+
+### Structure-Based HMM Profiling for Kunitz-Type Protease Inhibitor Domains
+
+Profile HMMs vs. Sequence-Similarity Search
+
+**Objective:** To build an automated protein domain annotation workflow connecting classical homology detection with modern representation-learning approaches, comparing sequence-based and structure-informed HMM profiling for Kunitz/BPTI-type domain detection.
+
+**Approach:**
+
+1. **Alignment & Profiling**
+   - Processed protein structure-derived alignments to support domain-level annotation.
+2. **Classification**
+   - Compared profile-based (**HMMER**) and sequence-similarity-based (**MMseqs2**) classification workflows, with 2-fold cross-validation.
+3. **Evaluation**
+   - Achieved **MCC = 0.997** (profile-HMM) and **MCC = 0.991** (sequence-similarity).
+
+**Tech Stack:** `HMMER`, `MMseqs2`, `Python`, `Bash`
+
+> **Key Insight:** Profile-HMM approaches slightly outperformed sequence-similarity search, reinforcing their value for remote homology detection and protein family classification.
+
+[GitHub Repository](https://github.com/MahanBalooei/HMM_KunitzDomain)
+
+---
+
+### Computational Epigenomics Analysis of DNA Methylation (Illumina 450K)
+
+R/Bioconductor Workflow for Array-Based Methylation Data
+
+**Objective:** To identify differentially methylated regions and epigenetic signatures between healthy and diseased individuals using Illumina 450K array data.
+
+**Approach:**
+
+1. **QC & Normalization** using **minfi**.
+2. **Exploratory Analysis** — PCA for batch-effect assessment, heatmaps of variable CpG sites.
+3. **Differential Methylation** — identified DMRs, visualized with volcano plots.
+
+**Tech Stack:** `R`, `Bioconductor`, `minfi`
+
+> **Key Insight:** PCA-based batch-effect assessment confirmed biological group as the dominant source of variance, validating the experimental design.
+
+[GitHub Repository](https://github.com/MahanBalooei/epigenetic-methylation-450k)
+
+---
+
+## Deep Learning & Medical Imaging
+
+### Chest X-Ray Pneumonia Detection via Transfer Learning
+
+ResNet50 vs. EfficientNetB0 vs. DenseNet-121 XRV
+
+**Objective:** To compare transfer-learning architectures for pneumonia classification under class imbalance, with a focus on clinically relevant evaluation.
+
+**Approach:**
+
+1. **Model Comparison** — ResNet50, EfficientNetB0, DenseNet-121 XRV.
+2. **Imbalance & Thresholding** — addressed class imbalance, evaluated threshold-selection strategies using clinically relevant metrics.
+3. **Interpretability** — applied ensembling, test-time augmentation, and Grad-CAM.
+
+**Tech Stack:** `PyTorch`, `TensorFlow`, `Grad-CAM`
+
+> **Key Insight:** DenseNet-121 XRV achieved the strongest performance under the maximum-MCC threshold strategy.
+
+[GitHub Repository](https://github.com/MahanBalooei/chest-xray-pneumonia-detection)

@@ -1,0 +1,11 @@
+---
+title: "Mahan Balooei"
+---
+
+## MSc Bioinformatics Student · University of Bologna
+
+I'm an MSc Bioinformatics student at the University of Bologna, with a background in Medical Laboratory Sciences. My work focuses on **protein sequence modelling**, **protein language models (ESM-2)**, and **ML-based functional annotation** — with broader interests in transcriptomics, single-cell omics, and biomedical data science.
+
+I'm currently seeking a research or MSc thesis internship, with flexibility on start date.
+
+Explore my [projects](projects.qmd) or [background](about.qmd), or reach out via [email](mailto:mahan.balooei@studio.unibo.it) or [LinkedIn](https://www.linkedin.com/in/mahan-balooei/).

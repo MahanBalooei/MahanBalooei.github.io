@@ -1,0 +1,26 @@
+project:
+  type: website
+
+website:
+  title: "Mahan Balooei"
+  navbar:
+    left:
+      - href: index.qmd
+        text: Home
+      - href: about.qmd
+        text: About
+      - href: projects.qmd
+        text: Projects
+    right:
+      - icon: github
+        href: https://github.com/MahanBalooei
+      - icon: linkedin
+        href: https://www.linkedin.com/in/mahan-balooei/
+      - icon: envelope
+        href: mailto:mahan.balooei@studio.unibo.it
+
+format:
+  html:
+    theme: cosmo
+    css: styles.css
+    toc: true

@@ -1,1 +1,5 @@
-/* css styles */
+@import url('https://fonts.googleapis.com/css2?family=Source+Serif+4:ital,wght@0,400;0,600;1,400&family=Source+Sans+3:wght@400;600&display=swap');
+
+.content {
+  max-width: 780px;
+}

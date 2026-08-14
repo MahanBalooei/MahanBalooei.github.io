@@ -1,11 +1,26 @@
 ---
 title: "Mahan Balooei"
+subtitle: "MSc Bioinformatics Student — University of Bologna"
 ---
 
-## MSc Bioinformatics Student · University of Bologna
+I am an MSc student in Bioinformatics at the University of Bologna, working at the intersection of protein language models, sequence representation learning, and computational biology. My research centers on applying and extending transformer-based protein language models (ESM-2) to problems in functional annotation, remote homology detection, and sequence-function prediction — with a broader interest in extending these approaches toward transcriptomic and single-cell omics data.
 
-I'm an MSc Bioinformatics student at the University of Bologna, with a background in Medical Laboratory Sciences. My work focuses on **protein sequence modelling**, **protein language models (ESM-2)**, and **ML-based functional annotation** — with broader interests in transcriptomics, single-cell omics, and biomedical data science.
+Before moving into computational biology, I trained in Medical Laboratory Sciences (BSc, Iran University of Medical Sciences), which shapes how I approach modelling problems: grounded in the underlying biology, not just the metrics.
 
-I'm currently seeking a research or MSc thesis internship, with flexibility on start date.
+I am currently seeking a **research or PhD position**, with flexibility regarding start date.
 
-Explore my [projects](projects.qmd) or [background](about.qmd), or reach out via [email](mailto:mahan.balooei@studio.unibo.it) or [LinkedIn](https://www.linkedin.com/in/mahan-balooei/).
+## Research Interests
+
+- Protein language models and representation learning
+- Sequence-function and structure-function prediction
+- Remote homology detection and protein family classification
+- Functional genomics and epigenomics
+- Machine learning applications in transcriptomic and single-cell omics data
+
+## Selected Publication
+
+<div class="publication">
+Farmani, S., Dehghanbanadaki, N., **Balooei, M.**, Mehralitabar, H., Sabaghian, H., & Naderi-Manesh, H. (2025). Mechanism-based targeting of lactate dehydrogenase tetramerization by naturally derived compounds: A survey of molecular docking, molecular dynamics, and QSAR analysis. *Computers in Biology and Medicine*, 197, 111000. [https://doi.org/10.1016/j.compbiomed.2025.111000](https://doi.org/10.1016/j.compbiomed.2025.111000)
+</div>
+
+[Full CV →](about.qmd) &nbsp;·&nbsp; [Research →](projects.qmd) &nbsp;·&nbsp; [mahan.balooei@studio.unibo.it](mailto:mahan.balooei@studio.unibo.it)

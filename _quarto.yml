@@ -8,19 +8,24 @@ website:
       - href: index.qmd
         text: Home
       - href: about.qmd
-        text: About
+        text: CV
       - href: projects.qmd
-        text: Projects
+        text: Research
     right:
+      - text: "PDF CV"
+        href: files/CV_Mahan_Balooei.pdf
       - icon: github
         href: https://github.com/MahanBalooei
       - icon: linkedin
         href: https://www.linkedin.com/in/mahan-balooei/
+      - text: ORCID
+        href: https://orcid.org/0009-0006-5358-0784
       - icon: envelope
         href: mailto:mahan.balooei@studio.unibo.it
 
 format:
   html:
-    theme: cosmo
+    theme: [litera, custom.scss]
     css: styles.css
-    toc: true
+    toc: false
+    linkcolor: "#8a1f11"

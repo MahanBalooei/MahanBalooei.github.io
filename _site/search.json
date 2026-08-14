@@ -7,20 +7,6 @@
     "text": "MSc Bioinformatics student at the University of Bologna with a background in Medical Laboratory Sciences and a primary focus on protein sequence modelling, protein language models, and ML-based functional annotation. Experienced with ESM-2 embeddings, signal peptide prediction, HMMER/MMseqs2 workflows, DNA methylation analysis in R/Bioconductor, and reproducible ML pipelines. Broader interests include AI applications in proteomics, transcriptomics, single-cell omics, and biomedical data science."
   },
   {
-    "objectID": "index.html",
-    "href": "index.html",
-    "title": "Mahan Balooei",
-    "section": "",
-    "text": "I’m an MSc Bioinformatics student at the University of Bologna, with a background in Medical Laboratory Sciences. My work focuses on protein sequence modelling, protein language models (ESM-2), and ML-based functional annotation — with broader interests in transcriptomics, single-cell omics, and biomedical data science.\nI’m currently seeking a research or MSc thesis internship, with flexibility on start date.\nExplore my projects or background, or reach out via email or LinkedIn."
-  },
-  {
-    "objectID": "index.html#msc-bioinformatics-student-university-of-bologna",
-    "href": "index.html#msc-bioinformatics-student-university-of-bologna",
-    "title": "Mahan Balooei",
-    "section": "",
-    "text": "I’m an MSc Bioinformatics student at the University of Bologna, with a background in Medical Laboratory Sciences. My work focuses on protein sequence modelling, protein language models (ESM-2), and ML-based functional annotation — with broader interests in transcriptomics, single-cell omics, and biomedical data science.\nI’m currently seeking a research or MSc thesis internship, with flexibility on start date.\nExplore my projects or background, or reach out via email or LinkedIn."
-  },
-  {
     "objectID": "about.html#profile",
     "href": "about.html#profile",
     "title": "About",
@@ -89,5 +75,33 @@
     "title": "Projects",
     "section": "Deep Learning & Medical Imaging",
     "text": "Deep Learning & Medical Imaging\n\nChest X-Ray Pneumonia Detection via Transfer Learning\nResNet50 vs. EfficientNetB0 vs. DenseNet-121 XRV\nObjective: To compare transfer-learning architectures for pneumonia classification under class imbalance, with a focus on clinically relevant evaluation.\nApproach:\n\nModel Comparison — ResNet50, EfficientNetB0, DenseNet-121 XRV.\nImbalance & Thresholding — addressed class imbalance, evaluated threshold-selection strategies using clinically relevant metrics.\nInterpretability — applied ensembling, test-time augmentation, and Grad-CAM.\n\nTech Stack: PyTorch, TensorFlow, Grad-CAM\n\nKey Insight: DenseNet-121 XRV achieved the strongest performance under the maximum-MCC threshold strategy.\n\nGitHub Repository"
+  },
+  {
+    "objectID": "index.html",
+    "href": "index.html",
+    "title": "Mahan Balooei",
+    "section": "",
+    "text": "I am an MSc student in Bioinformatics at the University of Bologna, working at the intersection of protein language models, sequence representation learning, and computational biology. My research centers on applying and extending transformer-based protein language models (ESM-2) to problems in functional annotation, remote homology detection, and sequence-function prediction — with a broader interest in extending these approaches toward transcriptomic and single-cell omics data.\nBefore moving into computational biology, I trained in Medical Laboratory Sciences (BSc, Iran University of Medical Sciences), which shapes how I approach modelling problems: grounded in the underlying biology, not just the metrics.\nI am currently seeking a research or PhD position, with flexibility regarding start date."
+  },
+  {
+    "objectID": "index.html#msc-bioinformatics-student-university-of-bologna",
+    "href": "index.html#msc-bioinformatics-student-university-of-bologna",
+    "title": "Mahan Balooei",
+    "section": "",
+    "text": "I’m an MSc Bioinformatics student at the University of Bologna, with a background in Medical Laboratory Sciences. My work focuses on protein sequence modelling, protein language models (ESM-2), and ML-based functional annotation — with broader interests in transcriptomics, single-cell omics, and biomedical data science.\nI’m currently seeking a research or MSc thesis internship, with flexibility on start date.\nExplore my projects or background, or reach out via email or LinkedIn."
+  },
+  {
+    "objectID": "index.html#research-interests",
+    "href": "index.html#research-interests",
+    "title": "Mahan Balooei",
+    "section": "Research Interests",
+    "text": "Research Interests\n\nProtein language models and representation learning\nSequence-function and structure-function prediction\nRemote homology detection and protein family classification\nFunctional genomics and epigenomics\nMachine learning applications in transcriptomic and single-cell omics data"
+  },
+  {
+    "objectID": "index.html#selected-publication",
+    "href": "index.html#selected-publication",
+    "title": "Mahan Balooei",
+    "section": "Selected Publication",
+    "text": "Selected Publication\n\nFarmani, S., Dehghanbanadaki, N., Balooei, M., Mehralitabar, H., Sabaghian, H., & Naderi-Manesh, H. (2025). Mechanism-based targeting of lactate dehydrogenase tetramerization by naturally derived compounds: A survey of molecular docking, molecular dynamics, and QSAR analysis. Computers in Biology and Medicine, 197, 111000. https://doi.org/10.1016/j.compbiomed.2025.111000\n\nFull CV →  ·  Research →  ·  mahan.balooei@studio.unibo.it"
   }
 ]

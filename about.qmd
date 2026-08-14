@@ -1,35 +1,49 @@
 ---
-title: "About"
+title: "Curriculum Vitae"
 ---
 
-## Profile
-
-MSc Bioinformatics student at the University of Bologna with a background in Medical Laboratory Sciences and a primary focus on protein sequence modelling, protein language models, and ML-based functional annotation. Experienced with ESM-2 embeddings, signal peptide prediction, HMMER/MMseqs2 workflows, DNA methylation analysis in R/Bioconductor, and reproducible ML pipelines. Broader interests include AI applications in proteomics, transcriptomics, single-cell omics, and biomedical data science.
+<p><a href="files/CV_Mahan_Balooei.pdf">Download PDF version</a></p>
 
 ## Education
 
 **University of Bologna** — MSc in Bioinformatics
 *Oct 2024 – Present*
 
-Coursework: sequence alignment, RNA-seq, microarrays, statistical analysis in R; ML/DL with scikit-learn & TensorFlow; SQL/graph queries, Docker, HPC/Slurm.
+Coursework: sequence alignment, RNA-seq, microarrays, statistical analysis in R; machine learning and deep learning with scikit-learn and TensorFlow; SQL/graph queries, Docker, HPC/Slurm.
 
-Scientific focus: protein language models, protein sequence representation learning, protein functional annotation, sequence-function prediction, and remote homology detection.
+Research focus: protein language models, protein sequence representation learning, protein functional annotation, sequence-function prediction, and remote homology detection.
 
 **Iran University of Medical Sciences** — BSc in Medical Laboratory Sciences
 *Sept 2019 – Jul 2023*
 
 Relevant coursework: Molecular Diagnostics, Immunoassays, Clinical Chemistry, Haematology, Microbiology, Virology.
 
-## Publication
+## Publications
 
-**Mechanism-based targeting of lactate dehydrogenase tetramerization by naturally derived compounds: A survey of molecular docking, molecular dynamics, and QSAR analysis**
-*Computers in Biology and Medicine, 2025*
+<div class="publication">
+Farmani, S., Dehghanbanadaki, N., **Balooei, M.**, Mehralitabar, H., Sabaghian, H., & Naderi-Manesh, H. (2025). Mechanism-based targeting of lactate dehydrogenase tetramerization by naturally derived compounds: A survey of molecular docking, molecular dynamics, and QSAR analysis. *Computers in Biology and Medicine*, 197, 111000. [https://doi.org/10.1016/j.compbiomed.2025.111000](https://doi.org/10.1016/j.compbiomed.2025.111000)
+</div>
 
-Investigated plant-derived compounds as LDH inhibitors for anticancer applications; identified 5 top candidates from pomegranate and sumac with docking scores >8 kcal/mol and stable MD simulations over 100 ns.
+## Research Experience
 
-[View article](https://doi.org/10.1016/j.compbiomed.2025.111000)
+**Protein Language Model-Based Signal Peptide Prediction** — *Sep 2025 – Nov 2025*
+Independently implemented MSc Bioinformatics project.
 
-## Skills
+Built an end-to-end protein sequence modelling pipeline for eukaryotic signal-peptide prediction using high-confidence UniProtKB/Swiss-Prot annotations. Applied MMseqs2 clustering for redundancy reduction and constructed biologically meaningful train/benchmark splits. Compared von Heijne PSWM, biochemical-feature SVM, CNN-BiLSTM, and ESM-2 embedding-based models, achieving F1 = 0.962 and MCC = 0.957 on a held-out benchmark with the ESM-2-based model. Analyzed amino-acid composition, signal-peptide lengths, kingdom-specific bias, and cleavage-site motifs for biological interpretation. [Code](https://github.com/MahanBalooei/eukaryotic-signal-peptide-prediction)
+
+**Protein Domain and Functional Annotation Using HMMER and MMseqs2** — *Jun 2025 – Jul 2025*
+
+Built an automated protein domain annotation workflow using profile HMMs, HMMER, and MMseqs2 for large-scale sequence classification. Processed protein structure-derived alignments to support domain-level annotation and sequence-based functional inference. Compared profile-based and sequence-similarity-based classification workflows, achieving MCC = 0.997 and MCC = 0.991 respectively, connecting classical homology and profile-HMM approaches to modern protein representation learning tasks. [Code](https://github.com/MahanBalooei/HMM_KunitzDomain)
+
+**Computational Epigenomics Analysis of DNA Methylation (Illumina 450K)** — *Jun 2025 – Jul 2025*
+
+Conducted an R/Bioconductor workflow for Illumina 450K DNA methylation array analysis, including quality control, normalization, PCA-based batch-effect assessment, and differential methylation analysis. Identified differentially methylated regions and visualized methylation patterns using heatmaps, volcano plots, and exploratory statistical summaries. [Code](https://github.com/MahanBalooei/epigenetic-methylation-450k)
+
+**Chest X-Ray Pneumonia Detection via Transfer Learning** — *Mar 2026 – Apr 2026*
+
+Compared ResNet50, EfficientNetB0, and DenseNet-121 XRV for pneumonia classification. Addressed class imbalance and evaluated threshold-selection strategies using clinically relevant metrics, applying ensembling, test-time augmentation, and Grad-CAM-based interpretability. DenseNet-121 XRV achieved the strongest performance under the maximum-MCC threshold strategy. [Code](https://github.com/MahanBalooei/chest-xray-pneumonia-detection)
+
+## Technical Skills
 
 **Functional Genomics & Epigenomics:** DNA methylation analysis (Illumina 450K arrays, minfi), differential methylation region (DMR) detection, PCA-based batch-effect assessment, R/Bioconductor
 

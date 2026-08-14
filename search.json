@@ -1,0 +1,93 @@
+[
+  {
+    "objectID": "about.html",
+    "href": "about.html",
+    "title": "About",
+    "section": "",
+    "text": "MSc Bioinformatics student at the University of Bologna with a background in Medical Laboratory Sciences and a primary focus on protein sequence modelling, protein language models, and ML-based functional annotation. Experienced with ESM-2 embeddings, signal peptide prediction, HMMER/MMseqs2 workflows, DNA methylation analysis in R/Bioconductor, and reproducible ML pipelines. Broader interests include AI applications in proteomics, transcriptomics, single-cell omics, and biomedical data science."
+  },
+  {
+    "objectID": "about.html#profile",
+    "href": "about.html#profile",
+    "title": "About",
+    "section": "",
+    "text": "MSc Bioinformatics student at the University of Bologna with a background in Medical Laboratory Sciences and a primary focus on protein sequence modelling, protein language models, and ML-based functional annotation. Experienced with ESM-2 embeddings, signal peptide prediction, HMMER/MMseqs2 workflows, DNA methylation analysis in R/Bioconductor, and reproducible ML pipelines. Broader interests include AI applications in proteomics, transcriptomics, single-cell omics, and biomedical data science."
+  },
+  {
+    "objectID": "about.html#education",
+    "href": "about.html#education",
+    "title": "About",
+    "section": "Education",
+    "text": "Education\nUniversity of Bologna — MSc in Bioinformatics Oct 2024 – Present\nCoursework: sequence alignment, RNA-seq, microarrays, statistical analysis in R; ML/DL with scikit-learn & TensorFlow; SQL/graph queries, Docker, HPC/Slurm.\nScientific focus: protein language models, protein sequence representation learning, protein functional annotation, sequence-function prediction, and remote homology detection.\nIran University of Medical Sciences — BSc in Medical Laboratory Sciences Sept 2019 – Jul 2023\nRelevant coursework: Molecular Diagnostics, Immunoassays, Clinical Chemistry, Haematology, Microbiology, Virology."
+  },
+  {
+    "objectID": "about.html#publication",
+    "href": "about.html#publication",
+    "title": "About",
+    "section": "Publication",
+    "text": "Publication\nMechanism-based targeting of lactate dehydrogenase tetramerization by naturally derived compounds: A survey of molecular docking, molecular dynamics, and QSAR analysis Computers in Biology and Medicine, 2025\nInvestigated plant-derived compounds as LDH inhibitors for anticancer applications; identified 5 top candidates from pomegranate and sumac with docking scores &gt;8 kcal/mol and stable MD simulations over 100 ns.\nView article"
+  },
+  {
+    "objectID": "about.html#skills",
+    "href": "about.html#skills",
+    "title": "About",
+    "section": "Skills",
+    "text": "Skills\nFunctional Genomics & Epigenomics: DNA methylation analysis (Illumina 450K arrays, minfi), differential methylation region (DMR) detection, PCA-based batch-effect assessment, R/Bioconductor\nProtein Bioinformatics & Sequence Analysis: ESM-2 protein language model embeddings, protein representation learning, signal peptide prediction, sequence-function prediction, protein-domain annotation, HMMER, MMseqs2, BLAST, Clustal, UniProt, PDB\nMachine Learning & Deep Learning: PyTorch, scikit-learn, TensorFlow, SVMs, CNN-BiLSTM, transfer learning, representation learning, model evaluation, threshold optimization, class-imbalance handling, ensembling, Grad-CAM-based interpretability\nReproducible Workflows & Tools: Python, R, Bash/Linux, SQL, Git/GitHub, Docker, HPC/Slurm, R Markdown, Jupyter Notebooks, conda environments"
+  },
+  {
+    "objectID": "about.html#work-experience",
+    "href": "about.html#work-experience",
+    "title": "About",
+    "section": "Work Experience",
+    "text": "Work Experience\nClinical Laboratory Internships — Tehran, 2022–2023 Rotations in haematology, microbiology, clinical chemistry, and biochemistry across hospital and diagnostic laboratory settings."
+  },
+  {
+    "objectID": "about.html#languages",
+    "href": "about.html#languages",
+    "title": "About",
+    "section": "Languages",
+    "text": "Languages\nEnglish: Proficient (TOEFL iBT 93, CEFR B2) · Italian: Basic communication · Persian (Farsi): Native"
+  },
+  {
+    "objectID": "about.html#contact",
+    "href": "about.html#contact",
+    "title": "About",
+    "section": "Contact",
+    "text": "Contact\n\nEmail: mahan.balooei@studio.unibo.it · mahanbalooei2@gmail.com\nGitHub: MahanBalooei\nLinkedIn: in/mahan-balooei\nORCID: 0009-0006-5358-0784"
+  },
+  {
+    "objectID": "projects.html",
+    "href": "projects.html",
+    "title": "Projects",
+    "section": "",
+    "text": "Comparing Classical Methods, SVMs, CNN-BiLSTM, and ESM-2 Embeddings\nObjective: To build an end-to-end protein sequence modelling pipeline for eukaryotic signal-peptide prediction, benchmarking classical and deep learning approaches against modern protein language model embeddings.\nApproach:\n\nData Preparation\n\nUsed high-confidence UniProtKB/Swiss-Prot annotations.\nApplied MMseqs2 clustering for redundancy reduction and biologically meaningful train/benchmark splits.\n\nModel Comparison\n\nBenchmarked the classical von Heijne PSWM, a biochemical-feature SVM, a CNN-BiLSTM, and an ESM-2 embedding-based model.\n\nEvaluation & Interpretation\n\nAchieved F1 = 0.962 and MCC = 0.957 on a held-out benchmark using the ESM-2-based model.\nAnalyzed amino-acid composition, signal-peptide lengths, kingdom-specific bias, and cleavage-site motifs.\n\n\nTech Stack: Python, PyTorch, ESM-2, MMseqs2, scikit-learn\n\nKey Insight: Protein language model embeddings substantially outperformed classical statistical and hand-engineered feature approaches, underscoring the value of learned representations for functional prediction tasks.\n\nGitHub Repository\n\n\n\n\nProfile HMMs vs. Sequence-Similarity Search\nObjective: To build an automated protein domain annotation workflow connecting classical homology detection with modern representation-learning approaches, comparing sequence-based and structure-informed HMM profiling for Kunitz/BPTI-type domain detection.\nApproach:\n\nAlignment & Profiling\n\nProcessed protein structure-derived alignments to support domain-level annotation.\n\nClassification\n\nCompared profile-based (HMMER) and sequence-similarity-based (MMseqs2) classification workflows, with 2-fold cross-validation.\n\nEvaluation\n\nAchieved MCC = 0.997 (profile-HMM) and MCC = 0.991 (sequence-similarity).\n\n\nTech Stack: HMMER, MMseqs2, Python, Bash\n\nKey Insight: Profile-HMM approaches slightly outperformed sequence-similarity search, reinforcing their value for remote homology detection and protein family classification.\n\nGitHub Repository\n\n\n\n\nR/Bioconductor Workflow for Array-Based Methylation Data\nObjective: To identify differentially methylated regions and epigenetic signatures between healthy and diseased individuals using Illumina 450K array data.\nApproach:\n\nQC & Normalization using minfi.\nExploratory Analysis — PCA for batch-effect assessment, heatmaps of variable CpG sites.\nDifferential Methylation — identified DMRs, visualized with volcano plots.\n\nTech Stack: R, Bioconductor, minfi\n\nKey Insight: PCA-based batch-effect assessment confirmed biological group as the dominant source of variance, validating the experimental design.\n\nGitHub Repository"
+  },
+  {
+    "objectID": "projects.html#protein-bioinformatics-machine-learning",
+    "href": "projects.html#protein-bioinformatics-machine-learning",
+    "title": "Projects",
+    "section": "",
+    "text": "Comparing Classical Methods, SVMs, CNN-BiLSTM, and ESM-2 Embeddings\nObjective: To build an end-to-end protein sequence modelling pipeline for eukaryotic signal-peptide prediction, benchmarking classical and deep learning approaches against modern protein language model embeddings.\nApproach:\n\nData Preparation\n\nUsed high-confidence UniProtKB/Swiss-Prot annotations.\nApplied MMseqs2 clustering for redundancy reduction and biologically meaningful train/benchmark splits.\n\nModel Comparison\n\nBenchmarked the classical von Heijne PSWM, a biochemical-feature SVM, a CNN-BiLSTM, and an ESM-2 embedding-based model.\n\nEvaluation & Interpretation\n\nAchieved F1 = 0.962 and MCC = 0.957 on a held-out benchmark using the ESM-2-based model.\nAnalyzed amino-acid composition, signal-peptide lengths, kingdom-specific bias, and cleavage-site motifs.\n\n\nTech Stack: Python, PyTorch, ESM-2, MMseqs2, scikit-learn\n\nKey Insight: Protein language model embeddings substantially outperformed classical statistical and hand-engineered feature approaches, underscoring the value of learned representations for functional prediction tasks.\n\nGitHub Repository\n\n\n\n\nProfile HMMs vs. Sequence-Similarity Search\nObjective: To build an automated protein domain annotation workflow connecting classical homology detection with modern representation-learning approaches, comparing sequence-based and structure-informed HMM profiling for Kunitz/BPTI-type domain detection.\nApproach:\n\nAlignment & Profiling\n\nProcessed protein structure-derived alignments to support domain-level annotation.\n\nClassification\n\nCompared profile-based (HMMER) and sequence-similarity-based (MMseqs2) classification workflows, with 2-fold cross-validation.\n\nEvaluation\n\nAchieved MCC = 0.997 (profile-HMM) and MCC = 0.991 (sequence-similarity).\n\n\nTech Stack: HMMER, MMseqs2, Python, Bash\n\nKey Insight: Profile-HMM approaches slightly outperformed sequence-similarity search, reinforcing their value for remote homology detection and protein family classification.\n\nGitHub Repository\n\n\n\n\nR/Bioconductor Workflow for Array-Based Methylation Data\nObjective: To identify differentially methylated regions and epigenetic signatures between healthy and diseased individuals using Illumina 450K array data.\nApproach:\n\nQC & Normalization using minfi.\nExploratory Analysis — PCA for batch-effect assessment, heatmaps of variable CpG sites.\nDifferential Methylation — identified DMRs, visualized with volcano plots.\n\nTech Stack: R, Bioconductor, minfi\n\nKey Insight: PCA-based batch-effect assessment confirmed biological group as the dominant source of variance, validating the experimental design.\n\nGitHub Repository"
+  },
+  {
+    "objectID": "projects.html#deep-learning-medical-imaging",
+    "href": "projects.html#deep-learning-medical-imaging",
+    "title": "Projects",
+    "section": "Deep Learning & Medical Imaging",
+    "text": "Deep Learning & Medical Imaging\n\nChest X-Ray Pneumonia Detection via Transfer Learning\nResNet50 vs. EfficientNetB0 vs. DenseNet-121 XRV\nObjective: To compare transfer-learning architectures for pneumonia classification under class imbalance, with a focus on clinically relevant evaluation.\nApproach:\n\nModel Comparison — ResNet50, EfficientNetB0, DenseNet-121 XRV.\nImbalance & Thresholding — addressed class imbalance, evaluated threshold-selection strategies using clinically relevant metrics.\nInterpretability — applied ensembling, test-time augmentation, and Grad-CAM.\n\nTech Stack: PyTorch, TensorFlow, Grad-CAM\n\nKey Insight: DenseNet-121 XRV achieved the strongest performance under the maximum-MCC threshold strategy.\n\nGitHub Repository"
+  },
+  {
+    "objectID": "index.html",
+    "href": "index.html",
+    "title": "Mahan Balooei",
+    "section": "",
+    "text": "I’m an MSc Bioinformatics student at the University of Bologna, with a background in Medical Laboratory Sciences. My work focuses on protein sequence modelling, protein language models (ESM-2), and ML-based functional annotation — with broader interests in transcriptomics, single-cell omics, and biomedical data science.\nI’m currently seeking a research or MSc thesis internship, with flexibility on start date.\nExplore my projects or background, or reach out via email or LinkedIn."
+  },
+  {
+    "objectID": "index.html#msc-bioinformatics-student-university-of-bologna",
+    "href": "index.html#msc-bioinformatics-student-university-of-bologna",
+    "title": "Mahan Balooei",
+    "section": "",
+    "text": "I’m an MSc Bioinformatics student at the University of Bologna, with a background in Medical Laboratory Sciences. My work focuses on protein sequence modelling, protein language models (ESM-2), and ML-based functional annotation — with broader interests in transcriptomics, single-cell omics, and biomedical data science.\nI’m currently seeking a research or MSc thesis internship, with flexibility on start date.\nExplore my projects or background, or reach out via email or LinkedIn."
+  }
+]

@@ -1,1 +1,3 @@
-Sitemap: https://MahanBalooei.github.io/sitemap.xml
+User-agent: *
+Allow: /
+Sitemap: https://mahanbalooei.github.io/sitemap-index.xml

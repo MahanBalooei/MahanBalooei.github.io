@@ -1,0 +1,73 @@
+---
+import PageLayout from "@/layouts/Base.astro";
+
+const meta = {
+	title: "Home",
+};
+---
+
+<PageLayout meta={meta}>
+	<section>
+		<h1 class="title mb-2">Mahan Balooei</h1>
+		<p class="text-accent mb-1 text-base font-semibold sm:text-lg">
+			Computational Protein Biology · Protein Language Models · Machine Learning
+		</p>
+		<p class="text-muted mb-8 text-sm">MSc Bioinformatics, University of Bologna</p>
+
+		<div class="prose prose-sm prose-cactus max-w-none">
+			<p>
+				I work on machine learning for proteins — protein language models, computational protein
+				biology, and sequence–structure–function modelling. My recent work uses ESM-2
+				representations for sequence-function prediction, alongside HMMER/MMseqs2 workflows for
+				protein domain annotation, built as reproducible machine-learning pipelines. I'm interested
+				in learning-based methods for protein sequence, structure, function, and molecular
+				interactions.
+			</p>
+			<p>
+				I am interested in PhD and research opportunities in protein machine learning,
+				computational protein biology, and related areas.
+			</p>
+		</div>
+	</section>
+
+	<section class="mt-12">
+		<h2 class="title text-accent mb-4 text-lg">Research Interests</h2>
+		<ul class="marker:text-accent list-disc space-y-1.5 ps-5 text-sm" role="list">
+			<li>Protein language models and representation learning</li>
+			<li>Protein sequence–structure–function modelling</li>
+			<li>Protein–protein and protein–peptide interaction modelling</li>
+			<li>Generative and structure-aware protein design</li>
+			<li>Remote homology detection and functional annotation</li>
+		</ul>
+	</section>
+
+	<section class="mt-12">
+		<h2 class="title text-accent mb-4 text-lg">Selected Publication</h2>
+		<div class="text-sm">
+			<p class="font-semibold">
+				Mechanism-based Targeting of Lactate Dehydrogenase Tetramerization Process through Natural
+				Derived Compounds: A Survey of Molecular Docking, Molecular Dynamics, and QSAR Analysis
+			</p>
+			<p class="text-muted mt-1">
+				<em>Computers in Biology and Medicine</em>, 2025 · Equal-contributing author
+			</p>
+			<p class="mt-2">
+				Computational screening and molecular-dynamics analysis of LDH tetramerization interfaces.
+			</p>
+			<a
+				class="cactus-link mt-2 inline-block font-semibold"
+				href="https://doi.org/10.1016/j.compbiomed.2025.111000"
+				rel="noreferrer"
+				target="_blank"
+			>
+				Paper →
+			</a>
+		</div>
+	</section>
+
+	<section class="mt-12 flex flex-wrap gap-x-4 gap-y-2 text-sm">
+		<a class="cactus-link" href="/research/">Research →</a>
+		<a class="cactus-link" href="/publications/">Publications →</a>
+		<a class="cactus-link" href="/cv/">CV →</a>
+	</section>
+</PageLayout>

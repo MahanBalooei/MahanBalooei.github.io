@@ -1,0 +1,46 @@
+---
+import PageLayout from "@/layouts/Base.astro";
+
+const meta = {
+	description: "Peer-reviewed publications by Mahan Balooei.",
+	title: "Publications",
+};
+---
+
+<PageLayout meta={meta}>
+	<h1 class="title mb-12">Publications</h1>
+
+	<section>
+		<article>
+			<h2 class="text-base font-semibold sm:text-lg">
+				Mechanism-based Targeting of Lactate Dehydrogenase Tetramerization Process through
+				Natural Derived Compounds: A Survey of Molecular Docking, Molecular Dynamics, and QSAR
+				Analysis
+			</h2>
+			<p class="text-muted mt-2 text-sm">
+				Farmani, S., Dehghanbanadaki, N.,
+				<strong class="text-global-text">Balooei, M.</strong> (equal-contributing author), Mehralitabar,
+				H., Sabaghian, H., &amp; Naderi-Manesh, H.
+			</p>
+			<p class="text-muted mt-1 text-sm">
+				<em>Computers in Biology and Medicine</em>, 197, 111000 (2025)
+			</p>
+			<div class="prose prose-sm prose-cactus mt-3 max-w-none">
+				<p>
+					Screened approximately 5,000 naturally derived compounds against four LDH
+					tetramerization interfaces, evaluating top candidates through molecular docking,
+					100-ns molecular dynamics simulations, and downstream structural and dynamics
+					analysis, and identifying candidate modulators of the tetramerization interfaces.
+				</p>
+			</div>
+			<a
+				class="cactus-link mt-3 inline-block text-sm font-semibold"
+				href="https://doi.org/10.1016/j.compbiomed.2025.111000"
+				rel="noreferrer"
+				target="_blank"
+			>
+				Paper →
+			</a>
+		</article>
+	</section>
+</PageLayout>

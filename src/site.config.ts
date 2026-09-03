@@ -6,7 +6,7 @@ export const siteConfig: SiteConfig = {
 	title: "Mahan Balooei",
 	author: "Mahan Balooei",
 	description:
-		"Mahan Balooei — Computational protein biology, protein language models, and machine learning for protein sequence, structure, function, and molecular interactions.",
+		"Mahan Balooei — MSc Bioinformatics researcher working on protein language models, variant-effect prediction, computational genomics, and machine learning for biological data.",
 	lang: "en-GB",
 	ogLocale: "en_GB",
 	showLogo: false,

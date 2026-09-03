@@ -3,7 +3,7 @@ import PageLayout from "@/layouts/Base.astro";
 
 const meta = {
 	description:
-		"Research projects in protein language models, protein sequence and structure modelling, and computational biology.",
+		"Research in protein language models, variant-effect prediction, computational genomics, and machine learning for biological data.",
 	title: "Research",
 };
 
@@ -12,7 +12,7 @@ interface Project {
 	subtitle: string;
 	description: string[];
 	methods: string[];
-	repo: string;
+	repo?: string;
 }
 
 const proteinProjects: Project[] = [
@@ -20,18 +20,18 @@ const proteinProjects: Project[] = [
 		title: "Protein Language Model-Based Signal Peptide Prediction",
 		subtitle: "Comparing classical statistical methods, SVMs, CNN-BiLSTM, and ESM-2 embeddings",
 		description: [
-			"Signal peptides direct proteins to the secretory pathway, and their accurate identification is a long-standing sequence-function prediction problem in proteomics. This project built an end-to-end pipeline for eukaryotic signal-peptide prediction using high-confidence UniProtKB/Swiss-Prot annotations, with MMseqs2 clustering applied for redundancy reduction and biologically meaningful train/benchmark splits.",
-			"Four approaches were benchmarked head-to-head: the classical von Heijne position-specific weight matrix, a biochemical-feature SVM, a CNN-BiLSTM sequence model, and a model built on ESM-2 protein language model embeddings. The ESM-2-based model achieved the strongest performance (F1 = 0.962, MCC = 0.957) on a held-out benchmark set. The analysis also examined amino-acid composition, signal-peptide length distributions, kingdom-specific bias, and cleavage-site motifs to ground the results biologically.",
+			"Built an end-to-end pipeline for eukaryotic signal-peptide prediction using high-confidence UniProtKB/Swiss-Prot annotations, with MMseqs2 clustering used to reduce sequence redundancy and construct biologically meaningful train/benchmark splits.",
+			"Compared the von Heijne position-specific weight matrix, a biochemical-feature SVM, a CNN-BiLSTM sequence model, and an ESM-2 embedding-based model. The ESM-2-based model achieved F1 = 0.962 and MCC = 0.957 on a held-out benchmark. The project also examined amino-acid composition, signal-peptide lengths, kingdom-specific bias, and cleavage-site motifs for biological interpretation.",
 		],
 		methods: ["Python", "PyTorch", "ESM-2", "MMseqs2", "scikit-learn"],
 		repo: "https://github.com/MahanBalooei/eukaryotic-signal-peptide-prediction",
 	},
 	{
-		title: "Structure-Informed HMM Profiling for Kunitz-Type Protease Inhibitor Domains",
-		subtitle: "Profile HMMs versus sequence-similarity search for domain annotation",
+		title: "Protein Domain and Functional Annotation Using HMMER and MMseqs2",
+		subtitle: "Profile HMMs versus sequence-similarity search for protein-domain annotation",
 		description: [
-			"Protein domain annotation connects classical homology detection to modern representation-learning approaches. This project built an automated workflow using profile Hidden Markov Models (HMMER) and sequence-similarity search (MMseqs2) to detect Kunitz/BPTI-type protease inhibitor domains, processing structure-derived alignments to support domain-level annotation.",
-			"Under two-fold cross-validation, the profile-HMM approach reached MCC = 0.997, slightly outperforming the sequence-similarity approach (MCC = 0.991). The profile-HMM approach slightly outperformed sequence-similarity search, illustrating its usefulness for detecting divergent members of a protein family — relevant to remote homology detection more broadly.",
+			"Built an automated protein-domain annotation workflow using profile HMMs, HMMER, and MMseqs2 for large-scale sequence classification, processing structure-derived protein alignments to support domain-level annotation and sequence-based functional inference.",
+			"Compared profile-based and sequence-similarity-based classification workflows, achieving MCC = 0.997 and MCC = 0.991, respectively. The project connects classical homology and profile-HMM methods to modern protein representation-learning problems such as remote homology detection and protein-family classification.",
 		],
 		methods: ["HMMER", "MMseqs2", "Python", "Bash"],
 		repo: "https://github.com/MahanBalooei/HMM_KunitzDomain",
@@ -43,7 +43,7 @@ const otherProjects: Project[] = [
 		title: "Computational Epigenomics Analysis of DNA Methylation (Illumina 450K)",
 		subtitle: "Differential methylation analysis in R/Bioconductor",
 		description: [
-			"Using Illumina 450K array data, this project examined differential DNA methylation between sample groups through a full R/Bioconductor workflow: quality control, normalization, and PCA-based batch-effect assessment prior to differential analysis. PCA confirmed biological group — rather than batch — as the dominant source of variance, validating the experimental design before proceeding to differentially methylated region (DMR) detection, visualized through heatmaps and volcano plots.",
+			"Conducted an R/Bioconductor workflow for Illumina 450K DNA methylation-array analysis, including quality control, normalization, PCA-based batch-effect assessment, and differential methylation analysis. Identified differentially methylated regions and visualized methylation patterns using heatmaps, volcano plots, and exploratory statistical summaries.",
 		],
 		methods: ["R", "Bioconductor", "minfi"],
 		repo: "https://github.com/MahanBalooei/epigenetic-methylation-450k",
@@ -52,7 +52,7 @@ const otherProjects: Project[] = [
 		title: "Chest X-Ray Pneumonia Detection via Transfer Learning",
 		subtitle: "Benchmarking ResNet50, EfficientNetB0, and DenseNet-121 XRV under class imbalance",
 		description: [
-			"This coursework project compared three transfer-learning architectures for pneumonia classification from chest radiographs, with attention to class imbalance and clinically meaningful evaluation rather than raw accuracy. Threshold-selection strategies were evaluated explicitly, and ensembling, test-time augmentation, and Grad-CAM-based interpretability were applied to assess whether model attention aligned with clinically relevant regions of the image. DenseNet-121 XRV achieved the strongest performance under a maximum-MCC threshold-selection strategy.",
+			"Compared ResNet50, EfficientNetB0, and DenseNet-121 XRV for pneumonia classification under class imbalance. Evaluated threshold selection, ensembling, test-time augmentation, and Grad-CAM interpretability; DenseNet-121 XRV achieved the strongest performance under the maximum-MCC strategy.",
 		],
 		methods: ["PyTorch", "TensorFlow", "Grad-CAM"],
 		repo: "https://github.com/MahanBalooei/chest-xray-pneumonia-detection",
@@ -64,7 +64,35 @@ const otherProjects: Project[] = [
 	<h1 class="title mb-12">Research</h1>
 
 	<section>
-		<h2 class="title text-accent mb-6 text-lg">Protein & Sequence Modelling</h2>
+		<h2 class="title text-accent mb-6 text-lg">Current Thesis Research</h2>
+		<article>
+			<h3 class="text-base font-semibold sm:text-lg">
+				Protein Language Models for Human Protein Variant Pathogenicity Prediction
+			</h3>
+			<p class="text-muted mt-1 text-sm italic">
+				MSc Thesis · University of Bologna · Ongoing
+			</p>
+			<div class="prose prose-sm prose-cactus mt-3 max-w-none">
+				<p>
+					My MSc thesis focuses on modernizing the E-SNPs&amp;GO framework for predicting whether human
+					missense variants are pathogenic or benign. The project centers on updating the human
+					variant datasets used by the original framework and evaluating contemporary protein
+					language-model representations for variant-effect prediction.
+				</p>
+				<p>
+					The work is currently in progress and includes reviewing newer variant-effect methods and
+					protein language models to establish appropriate modern baselines and modelling directions.
+				</p>
+			</div>
+			<p class="mt-3 text-sm">
+				<span class="font-semibold">Supervisors: </span>
+				Castrense Savojardo · Pier Luigi Martelli · Matteo Manfredi
+			</p>
+		</article>
+	</section>
+
+	<section class="mt-16">
+		<h2 class="title text-accent mb-6 text-lg">Protein &amp; Sequence Modelling</h2>
 		<div class="space-y-12">
 			{
 				proteinProjects.map((p) => (
@@ -85,12 +113,14 @@ const otherProjects: Project[] = [
 								</>
 							))}
 						</p>
-						<p class="mt-1 text-sm">
-							<span class="font-semibold">Code: </span>
-							<a class="cactus-link" href={p.repo} rel="noreferrer" target="_blank">
-								{p.repo.replace("https://", "")}
-							</a>
-						</p>
+						{p.repo && (
+							<p class="mt-1 text-sm">
+								<span class="font-semibold">Code: </span>
+								<a class="cactus-link" href={p.repo} rel="noreferrer" target="_blank">
+									{p.repo.replace("https://", "")}
+								</a>
+							</p>
+						)}
 					</article>
 				))
 			}
@@ -98,7 +128,7 @@ const otherProjects: Project[] = [
 	</section>
 
 	<section class="mt-16">
-		<h2 class="title text-accent mb-6 text-lg">Other Computational Projects</h2>
+		<h2 class="title text-accent mb-6 text-lg">Other Computational Biology</h2>
 		<div class="space-y-10">
 			{
 				otherProjects.map((p) => (
@@ -119,12 +149,14 @@ const otherProjects: Project[] = [
 								</>
 							))}
 						</p>
-						<p class="mt-1 text-xs sm:text-sm">
-							<span class="font-semibold">Code: </span>
-							<a class="cactus-link" href={p.repo} rel="noreferrer" target="_blank">
-								{p.repo.replace("https://", "")}
-							</a>
-						</p>
+						{p.repo && (
+							<p class="mt-1 text-xs sm:text-sm">
+								<span class="font-semibold">Code: </span>
+								<a class="cactus-link" href={p.repo} rel="noreferrer" target="_blank">
+									{p.repo.replace("https://", "")}
+								</a>
+							</p>
+						)}
 					</article>
 				))
 			}
